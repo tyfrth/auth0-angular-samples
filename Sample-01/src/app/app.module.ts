@@ -41,6 +41,7 @@ import { environment as env } from '../environments/environment';
     FontAwesomeModule,
     AuthModule.forRoot({
       ...env.auth,
+      useRefreshTokens: true,
       httpInterceptor: {
         ...env.httpInterceptor,
       },
